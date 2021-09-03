@@ -1,0 +1,16 @@
+### list all messages
+GET http://localhost:3000/message
+
+### get single message
+GET http://localhost:3000/message/1
+
+### create a new message
+POST http://localhost:3000/message
+content-type: application/json
+
+{
+    "content":"hi there",
+    "phone_number": 12345,
+    "email": "example@example.com",
+    "password": "password"
+}
